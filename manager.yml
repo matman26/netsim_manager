@@ -1,0 +1,4 @@
+ned: /opt/ncs/current/packages/neds/cisco-iosxr-cli-7.38/
+network: RT-Teste
+num_devices: 2
+group: MAN
