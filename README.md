@@ -62,6 +62,7 @@ Loaded configuration for Test1 from ./Test1/config.xml
 ```
 
 To remove the netsim devices from your NSO instance, use `remove` followed by `stop`.
+
 $ ./netsim_manager.py remove
 Removed device Test0 from group TEST
 Removed device Test0 from NSO
