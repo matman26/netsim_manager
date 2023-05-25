@@ -2,8 +2,21 @@
 Declarative, config-based netsim management for reproducible, 
 versionable ncs-netsim networks.
 
+# Installation
+Clone this repository locally (or download it as a zip file) and set netsim_manager.py to executable:
+```
+chmod +x netsim_manager.py
+```
+
+You may also choose to symlink netsim_manager.py to a directory within your PATH variable, for example:
+
+```
+ln -s /path/to/netsim_manager.py /usr/bin/netsim_manager
+```
+
 # Usage
-The manager.yml file is the config file responsible for the netsim network.
+The manager.yml file is the config file responsible for the netsim network. This needs to be in the current
+working directory when netsim_manager.py is called.
 A minimal yaml file defines prefixes and the `netsim_dir` directory under `settings`:
 
 ```yaml
@@ -42,7 +55,7 @@ DEVICE ios-1 STARTED
 DEVICE ios-2 STARTED
 ```
 
-Use `onboard` to add your devices to NSO via the CLI.
+Use `onboard` to add your devices to a local NSO instance via the CLI. This naturally requires NSO to be running and the current user to have CLI access.
 ```
 $ ./netsim_manager.py onboard
 Device xr-0 onboarding status on NSO:
