@@ -14,6 +14,11 @@ You may also choose to symlink netsim_manager.py to a directory within your PATH
 ln -s /path/to/netsim_manager.py /usr/bin/netsim_manager
 ```
 
+This module requires ruamel.yaml and click modules, which can be collected from PyPI:
+```
+pip install ruamel.yaml click
+```
+
 # Usage
 The manager.yml file is the config file responsible for the netsim network. This needs to be in the current
 working directory when netsim_manager.py is called.
