@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from netsim_manager.manager import NetsimManager
 import click
 
